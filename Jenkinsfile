@@ -11,7 +11,7 @@ stages {
             steps {
                 sh '''
                 echo "Sending folder to remote server..."
-                scp -i chandni.pem -r /home/ubuntu/jenkins-24-7-/om/ ubuntu@54.208.18.40:/home/ubuntu/
+                scp -i /home/jenkins/chandni.pem -r /home/ubuntu/jenkins-24-7-/om/ ubuntu@54.208.18.40:/home/ubuntu/
                 '''
             }
         }
