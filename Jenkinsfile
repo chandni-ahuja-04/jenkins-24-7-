@@ -3,7 +3,7 @@ pipeline {
 stages {
         stage('Clone GitHub Repo') {
             steps {
-                git 'https://github.com/chandni-ahuja-04/jenkins-24-7-.git'
+                git branch: 'main', url: 'https://github.com/chandni-ahuja-04/jenkins-24-7-.git'
             }
         }
 
